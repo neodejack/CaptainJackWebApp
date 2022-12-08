@@ -9,8 +9,7 @@ tele.ready();
 const webAppData = tele.initDataUnsafe;
 
 const [member, setMember] = createSignal("");
-setMember(webAppData.user);
-console.log(member())
+setMember(webAppData.user.username);
 function App() {
   return (
     <div class="container text-center">
