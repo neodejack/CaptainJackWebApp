@@ -10,7 +10,6 @@ const webAppData = tele.initDataUnsafe;
 
 const [member, setMember] = createSignal("");
 setMember(webAppData.user);
-
 console.log(member())
 function App() {
   return (
