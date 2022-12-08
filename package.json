@@ -10,11 +10,12 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^4.8.2",
     "vite": "^3.0.9",
     "vite-plugin-solid": "^2.3.0"
   },
   "dependencies": {
+    "bootstrap": "^5.2.3",
+    "solid-app-router": "^0.4.2",
     "solid-js": "^1.5.1"
   }
 }
