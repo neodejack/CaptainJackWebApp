@@ -6,9 +6,10 @@ import { createEffect, createSignal } from "solid-js";
 
 const tele = window.Telegram.WebApp;
 tele.ready();
+const webAppData = tele.initDataUnsafe;
 
 const [member, setMember] = createSignal("");
-setMember("zili");
+setMember(webAppData.user.first_name);
 function App() {
   return (
     <div class="container text-center">
