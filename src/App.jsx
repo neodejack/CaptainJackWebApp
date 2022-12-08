@@ -1,7 +1,7 @@
 import Nav from "./components/nav";
 import { Route, Routes } from "solid-app-router";
 import HomePage from "./pages/homePage";
-import MemberPage from "./pages/memberPage";
+import MemberPage from "./pages/memberPage.jsx";
 import { createEffect, createSignal } from "solid-js";
 
 const tele = window.Telegram.WebApp;
@@ -11,12 +11,11 @@ const [member, setMember] = createSignal("");
 setMember("zili");
 function App() {
   return (
-    <div class="container">
-      Captain Jack at your service
-      <Nav />
+    <div class="container text-center">
+      <h1>Captain <span class="badge text-bg-success">Jack</span></h1>
+      {/*<Nav />*/}
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/member" element={<MemberPage member={member()} />} />
+        <Route path="/" element={<MemberPage member={member()} />} />
       </Routes>
     </div>
   );

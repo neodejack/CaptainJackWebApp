@@ -9,15 +9,6 @@ const Nav = () => {
         end
         activeClass="btn-success"
       >
-        Home
-      </NavLink>
-
-      <NavLink
-        href="/member"
-        class="btn btn-primary me-2"
-        end
-        activeClass="btn-success"
-      >
         Member Page
       </NavLink>
     </nav>

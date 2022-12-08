@@ -15,8 +15,7 @@ const MemberPage = ({ member }) => {
       keyed
     >
       <div class="container text-center">
-        <h2>Hi {member}</h2>
-        <h3>What would you like to do</h3>
+        <h3>Hey {member}, how can i help</h3>
         <CourtAllocationButton />
       </div>
     </Show>
