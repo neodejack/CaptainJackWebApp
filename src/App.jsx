@@ -13,13 +13,11 @@ setMember(webAppData.user.username);
 function App() {
   return (
     <div class="container text-center">
-      <h1>Captain <span class="badge text-bg-success">Jack</span></h1>
+      <h1>🎾 Captain <span class="badge text-bg-success">Jack</span></h1>
       {/*<Nav />*/}
       <Routes>
         <Route path="/" element={<MemberPage member={member()} />} />
       </Routes>
-      <h3>Init Data (unsafe): </h3>
-      <pre id="initDataUnsafe">{JSON.stringify(webAppData, null, 2)}</pre>
     </div>
   );
 }
