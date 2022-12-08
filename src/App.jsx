@@ -10,6 +10,7 @@ const webAppData = tele.initDataUnsafe;
 
 const [member, setMember] = createSignal("");
 setMember(webAppData.user);
+
 console.log(member())
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
       <Routes>
         <Route path="/" element={<MemberPage member={member()} />} />
       </Routes>
+      <h3>Init Data (unsafe): </h3>
+      <pre id="initDataUnsafe">{JSON.stringify(webAppData, null, 2)}</pre>
     </div>
   );
 }
