@@ -3,6 +3,7 @@ import { Show } from "solid-js";
 import CourtAllocationButton from "../components/courtAllocationButton";
 
 const MemberPage = ({ member }) => {
+
   return (
     <Show
       when={member !== ""}
