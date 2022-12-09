@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   bootstrap: ^5.2.3
+  pocketbase: ^0.8.3
   solid-app-router: ^0.4.2
   solid-js: ^1.5.1
   vite: ^3.0.9
@@ -9,6 +10,7 @@ specifiers:
 
 dependencies:
   bootstrap: 5.2.3
+  pocketbase: 0.8.3
   solid-app-router: 0.4.2_solid-js@1.5.1
   solid-js: 1.5.1
 
@@ -778,6 +780,10 @@ packages:
   /picocolors/1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
     dev: true
+
+  /pocketbase/0.8.3:
+    resolution: {integrity: sha512-B1ed44QM6iEeu007br86sDB/QGoMZXPQkujVk4p37q/WIFM0HvIDnffqTbz7oyaE6Sf8t5lNT3Mc2jVIvdxfXQ==}
+    dev: false
 
   /postcss/8.4.16:
     resolution: {integrity: sha512-ipHE1XBvKzm5xI7hiHCZJCSugxvsdq2mPnsq5+UF+VHCjiBvtDrlxJfMBToWaP9D5XlgNmcFGqoHmUn0EYEaRQ==}
