@@ -13,7 +13,7 @@ const MemberPage = ({ teleHandle }) => {
   const [member, setMember] = createSignal("");
   createEffect(async () => {
     try {
-      const filter = `telegram_handle="${teleHandle + "2"}" && paid=true`;
+      const filter = `telegram_handle="${teleHandle}" && paid=true`;
       const record = await pb
         .collection("member_22_23")
         .getFirstListItem(filter);
