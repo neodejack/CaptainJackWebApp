@@ -22,11 +22,9 @@ function App() {
       <h1>
         🎾 Captain <span class="badge text-bg-success">Jack</span>
       </h1>
-      {/*bug fix*/}
-      <pre>{teleHandle()}</pre>
-      {/*<Routes>*/}
-      {/*  <Route path="/" element={<MemberPage teleHandle={teleHandle()} />} />*/}
-      {/*</Routes>*/}
+      <Routes>
+        <Route path="/" element={<MemberPage teleHandle={teleHandle()} />} />
+      </Routes>
     </div>
   );
 }
