@@ -3,10 +3,10 @@ import { createEffect, createSignal, Show } from "solid-js";
 import CourtAllocationButton from "../components/courtAllocationButton";
 import PocketBase from "pocketbase";
 
-const pb = new PocketBase("http://127.0.0.1:8090");
+const pb = new PocketBase("http://ec2-13-250-127-69.ap-southeast-1.compute.amazonaws.com:8080");
 const authData = await pb.admins.authWithPassword(
   "neodejack@gmail.com",
-  "password123"
+  "ntutcntutc"
 );
 
 const MemberPage = ({ teleHandle }) => {
