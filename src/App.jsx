@@ -13,7 +13,7 @@ const [teleHandle, setTeleHandle] = createSignal("");
 try {
   setTeleHandle(webAppData.user.username);
 } catch (TypeError) {
-  setTeleHandle("neodejack");
+  setTeleHandle("");
 }
 
 function App() {
