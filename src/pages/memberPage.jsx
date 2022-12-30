@@ -28,7 +28,7 @@ const MemberPage = ({ teleHandle }) => {
     <Show
       when={member() !== ""}
       fallback={
-        <div class="container text-center">
+        <div>
           <h2>You are not a member</h2>
           <h3>Please contact tennis club exco if this is an error</h3>
         </div>
