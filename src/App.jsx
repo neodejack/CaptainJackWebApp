@@ -4,7 +4,8 @@ import HomePage from "./pages/homePage";
 import MemberPage from "./pages/memberPage.jsx";
 import { createEffect, createSignal } from "solid-js";
 import PocketBase from "pocketbase";
-import Header from "./components/header";
+import Header from "./components/Header";
+import SideBar from "./components/SideBar";
 
 const tele = window.Telegram.WebApp;
 tele.ready();
@@ -19,11 +20,12 @@ try {
 
 function App() {
   return (
-    <div>
+    <div class="flex flex-col bg-blueAO h-screen">
       <Header />
-      <Routes>
-        <Route path="/" element={<MemberPage teleHandle={teleHandle()} />} />
-      </Routes>
+      <div class="flex flex-row">
+        <SideBar />
+        <MemberPage teleHandle={teleHandle()} />
+      </div>
     </div>
   );
 }

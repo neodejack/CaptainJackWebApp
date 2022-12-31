@@ -4,7 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        AOblue: "#0091D2",
+        blueAO: "#0091D2",
+        orange: "#C85A19",
+        green: "#00703C",
+        purple: "#54008B",
+        blueUO: "#00288C",
+        yellow: "#FFD400",
       },
     },
   },

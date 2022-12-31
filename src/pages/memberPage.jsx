@@ -2,8 +2,11 @@ import CollapseButton from "../components/collapseButton";
 import { createEffect, createSignal, Show } from "solid-js";
 import CourtAllocationButton from "../components/courtAllocationButton";
 import PocketBase from "pocketbase";
+import Header from "../components/Header";
 
-const pb = new PocketBase("https://captain-jack-web-app-pocketbase-beta.fly.dev/");
+const pb = new PocketBase(
+  "https://captain-jack-web-app-pocketbase-beta.fly.dev/"
+);
 const authData = await pb.admins.authWithPassword(
   "neodejack@gmail.com",
   "ntutcntutc"
@@ -25,21 +28,29 @@ const MemberPage = ({ teleHandle }) => {
   });
 
   return (
-    <Show
-      when={member() !== ""}
-      fallback={
-        <div>
-          <h2>You are not a member</h2>
-          <h3>Please contact tennis club exco if this is an error</h3>
-        </div>
-      }
-      keyed
+    <div
+      class="flex flex-col
+    m-0
+    left-16
+    h-full w-full
+    overflow-hidden"
     >
-      <div class="container text-center">
-        <h3>Hey {member()}, how can i help</h3>
-        <CourtAllocationButton />
-      </div>
-    </Show>
+      <Show
+        when={member() !== ""}
+        fallback={
+          <div>
+            <h2>You are not a member</h2>
+            <h3>Please contact tennis club exco if this is an error</h3>
+          </div>
+        }
+        keyed
+      >
+        <div>
+          <h3>Hey {member()}, how can i help</h3>
+          <CourtAllocationButton />
+        </div>
+      </Show>
+    </div>
   );
 };
 
