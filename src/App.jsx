@@ -22,7 +22,7 @@ function App() {
   return (
     <div class="flex flex-col bg-blueAO h-screen">
       <Header />
-      <div class="flex flex-row">
+      <div class="flex flex-row h-full">
         <SideBar />
         <MemberPage teleHandle={teleHandle()} />
       </div>
