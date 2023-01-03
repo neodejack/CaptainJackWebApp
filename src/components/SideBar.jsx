@@ -16,12 +16,10 @@ function SideBar() {
 
 function SideBarIcon({ grandSlam }) {
   return (
-    <div
-      class="relative flex items-center justify-center
-    h-12 w-12 mt-2 mb-2 mx-auto bg-white
-    rounded-xl cursor-pointer shadow-lg ;"
-    >
-      <img src={grandSlam} />
+    <div class="sidebar-icon">
+      <div class="m-1">
+        <img src={grandSlam} alt="grand slam logo" />
+      </div>
     </div>
   );
 }
