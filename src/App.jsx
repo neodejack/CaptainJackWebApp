@@ -19,12 +19,17 @@ try {
 }
 
 function App() {
+  const [theme, setTheme] = createSignal("australianOpen");
+  // TODO: try createStore instead
+  console.log(theme());
   return (
-    <div class="flex flex-col bg-blueAO h-screen">
-      <Header />
-      <div class="flex flex-row h-full">
-        <SideBar />
-        <MemberPage teleHandle={teleHandle()} />
+    <div class={theme()}>
+      <div class="flex flex-col bg-primary h-screen">
+        <Header />
+        <div class="flex flex-row h-full">
+          <SideBar setTheme={setTheme()} />
+          <MemberPage teleHandle={teleHandle()} />
+        </div>
       </div>
     </div>
   );

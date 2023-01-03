@@ -5,7 +5,7 @@ import UOlogo from "../assets/UOlogo.png";
 
 function SideBar() {
   return (
-    <div class="sticky top-0 left-0 h-full w-20 m-0 flex flex-col justify-around bg-blueAO text-black shadow-2xl">
+    <div class="sticky top-0 left-0 h-full w-20 m-0 rounded-lg flex flex-col justify-around bg-primary text-black shadow-lg shadow-gray-300">
       <SideBarIcon grandSlam={AOlogo} />
       <SideBarIcon grandSlam={FOlogo} />
       <SideBarIcon grandSlam={Wlogo} />
@@ -16,10 +16,10 @@ function SideBar() {
 
 function SideBarIcon({ grandSlam }) {
   return (
-    <div class="sidebar-icon">
-      <div class="m-1">
+    <div class="m-1">
+      <button type="button" class="sidebar-button" onClick="">
         <img src={grandSlam} alt="grand slam logo" />
-      </div>
+      </button>
     </div>
   );
 }

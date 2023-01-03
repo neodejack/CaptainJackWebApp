@@ -3,9 +3,11 @@
 @tailwind utilities;
 
 @layer components {
-    .sidebar-icon {
-        @apply relative flex items-center justify-center
-        h-14 w-14 mt-4 mb-4 mx-auto bg-white
+    .sidebar-button {
+        @apply bg-white hover:bg-gray-300 border border-gray-200
+        focus:ring-4 focus:outline-none focus:ring-gray-100
+        relative flex items-center justify-center
+        h-14 w-14 mt-4 mb-4 mx-auto
         rounded-xl cursor-pointer shadow-lg
     }
 }
