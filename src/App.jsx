@@ -11,6 +11,7 @@ const tele = window.Telegram.WebApp;
 tele.ready();
 const webAppData = tele.initDataUnsafe;
 
+const [theme, setTheme] = createSignal("frenchOpen");
 const [teleHandle, setTeleHandle] = createSignal("");
 try {
   setTeleHandle(webAppData.user.username);
@@ -19,9 +20,6 @@ try {
 }
 
 function App() {
-  const [theme, setTheme] = createSignal("australianOpen");
-  // TODO: try createStore instead
-  console.log(theme());
   return (
     <div class={theme()}>
       <div class="flex flex-col bg-primary h-screen">
@@ -35,4 +33,5 @@ function App() {
   );
 }
 
+export { theme, setTheme };
 export default App;
